@@ -1,0 +1,368 @@
+$primary-color:#041b09;
+$secondry-color:#1c6b4c;
+$white:#fff;
+$black:#000;
+$light-green:#f6f4ef;
+$ligt-white:#fff9;
+$skin-color:#f6ece1;
+$dark-white:#0009;
+$qustrial:"Questrial", sans-serif;
+$h1:70px;
+$h2:46px;
+$h3:36px;
+$h4:26px;
+$titlel:24px;
+$sub-title:22px;
+$f-20:20px;
+$f-18:18px;
+$p:16px;
+$sub-p:14px;
+
+body{
+    font-size: $p;
+    color: $black;
+    font-family: $qustrial;
+}
+
+///////global///////
+
+.bg-darkgreen{
+    background-color: $primary-color;
+    border-radius: 0px 0px 10px 10px;
+    // height: 70vh;
+}
+
+
+.nav-btn{
+    background-color: $white !important;
+    color: $black;
+    padding: 7px 30px;
+    border-radius: 30px;
+    &:hover{
+        color: $secondry-color;
+    }
+    i{
+        background-color: $secondry-color;
+        border-radius: 20px;
+        padding: 7px;
+        color: $white;
+    }
+}
+
+.dark-btn{
+    background-color: $black !important;
+    color: $white;
+    padding: 7px 30px;
+    border-radius: 30px;
+    &:hover{
+        color: $secondry-color;
+    }
+}
+
+
+.coman-h2{
+    font-size: $h2;
+    @media(max-width:1400px){
+        font-size: $h3;
+    }
+}
+
+.coman-h3{
+    font-size: $h3;
+    @media(max-width:1400px){
+        font-size: $h4;
+    }
+}
+
+
+
+///////global///////
+
+
+
+///////header///////
+
+.navbar{
+    color: $white !important;
+    background-color: rgba(4, 27, 9, 0.5);
+    backdrop-filter: blur(5px);
+
+    .navbar-brand{
+        font-size: $h3;
+        font-weight: 500;
+        i{
+            color: $secondry-color;
+        }
+    }
+   
+    .shop{
+        background-color: $secondry-color;
+        padding: 5px 15px;
+        color: $white;
+        border-radius: 30px;
+    }
+}
+
+
+///////header///////
+
+
+
+///////hero///////
+
+.hero{
+    color: $white;
+    .row{
+        padding-top: 100px;
+        @media(max-width:1400px){
+            padding-top: 50px;
+        }
+        .hero-heading{
+            font-size: $h1;
+            padding-bottom: 50px;
+            @media(max-width:1400px){
+                padding: 20px;
+            }
+            span{
+                color: $secondry-color;
+            }
+            @media(max-width:1400px){
+                font-size: $h2;
+            }
+        }
+        .content{
+            font-size: $f-20;
+        }
+        img{
+            border-radius: 40px;
+        }
+        .hero-slider{
+            .item{
+                font-size: $p;
+                p{
+                    i{
+                        color: $secondry-color;
+                        padding-right: 5px;
+                    }
+                }
+                
+            }
+        }
+       
+    }
+}
+
+
+///////hero///////
+
+
+
+///////intro///////
+
+.intro{
+    background-color: $light-green;
+    margin: 5px;
+    border-radius: 10px;
+    .info{
+        position: relative;
+        span{
+            position: absolute;
+            bottom:5%;
+            left: 5%;
+            color: $white;
+            font-size: $sub-title;
+            font-weight: 500;
+        }
+        img{
+            border-radius: 15px;
+        }
+    }
+}
+
+///////intro///////
+
+///////faqs///////
+
+.faqs{
+    img{
+        border-radius: 15px;
+    }
+    .accordion{
+        --bs-accordion-border-color: transparent !important;
+        --bs-accordion-btn-focus-border-color: transparent !important;
+        --bs-accordion-btn-focus-box-shadow: transparent !important;
+        border-right: none !important;
+        --bs-accordion-border-radius:0px !important;
+        .accordion-button{
+            background-color:transparent !important;
+            align-items: baseline;
+            font-weight: 600;
+            color: $secondry-color;
+        }
+
+        .accordion-item{
+            border-bottom: 1px solid $black;
+            &:last-child{
+                border-bottom:none ;
+            }
+        }
+
+    }
+}
+
+///////faqs///////
+
+
+///////sustainabilty///////
+
+.sustainabilty{
+    background-color: $primary-color;
+    border-radius: 10px;
+    color: $white;
+
+    .coman-h2{
+        span{
+            color: $secondry-color;
+        }
+        
+    }
+    .circle{
+        border-radius: 40%;
+    }
+
+    .points{
+        align-items: center;
+        i{
+            background-color: $secondry-color;
+            border-radius: 20px;
+            padding: 7px;
+            margin-right: 3px;
+        }
+        .sub-title{
+            font-size: $p;
+            margin-bottom: 0%;
+        }
+        .d-flex{
+            border-bottom: 1px solid #ffffff1a;
+            padding-block: 10px;
+        }
+    }
+
+}
+
+
+
+///////sustainabilty///////
+
+
+
+///////about///////
+
+.about{
+    .sub-title{
+        font-size: $sub-title;
+    }
+    .bg-darkgreen{
+        border-radius: 10px;
+        color: $white;
+        padding: 20px;
+
+        .pb-6{
+            padding-bottom: 90px;
+        }
+    }
+    .bg-plant{
+        background: url(../images/about.jpg) , #000;
+        background-position: left center;
+        background-size: auto;
+        padding: 20px;
+        height: 30vh;
+        border-radius: 10px;
+
+        .pt-6{
+            top:30%;
+            position: relative;
+            color: $primary-color;
+        }
+
+    }
+}
+
+
+///////about///////
+
+
+
+///////product///////
+
+.product{
+    background-color: #f6f4ef;
+    img{
+        border-radius: 10px;
+    }
+    .title{
+        font-size: $titlel;
+    }
+}
+
+///////product///////
+
+///////blog///////
+
+.blog{
+    color: $white;
+    .container{
+        background-image: url(../images/blog.jpg);
+        border-radius: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+        height: 70vh;
+       
+        .sub-title{
+            font-size: $sub-title;
+            @media(max-width:768px){
+                display: none;
+            }
+
+        }
+
+        .pt-6{
+            padding-top: 300px;
+        }
+    }
+}
+
+///////blog///////
+
+///////footer///////
+
+footer{
+    .container{
+        background-color: $primary-color;
+        border-radius: 20px;
+        padding: 20px;
+        color: $white;
+
+        .brand{
+            text-decoration: none;
+            color: $white;
+            font-size: $titlel;
+            // margin-bottom: 20px;
+        }
+        ul{
+            list-style: none !important;
+            li{
+                a{
+                    color: $white !important;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+///////footer///////
